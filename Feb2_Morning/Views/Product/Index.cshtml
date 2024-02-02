@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product View</h2>
+<h3>First Partial View</h3>
+@Html.Partial("ProductView");
+<h3>Second way of PartialView</h3>
+@{ Html.RenderPartial("ProductView");
+        }
+
+<h3>Third Way</h3>
+@Html.Action("PAction");
+<h3>forth view</h3>
+@{ 
+    Html.RenderAction("PAction");
+}
